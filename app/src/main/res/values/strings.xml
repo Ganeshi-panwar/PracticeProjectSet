@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">PracticeProjectSet</string>
     <string name="hello_ganeshi_panwar">Hello Ganeshi Panwar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_Second_fragment">Hello Second Fragment</string>
 </resources>
