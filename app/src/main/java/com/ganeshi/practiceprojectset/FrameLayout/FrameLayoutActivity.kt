@@ -3,6 +3,7 @@ package com.ganeshi.practiceprojectset.FrameLayout
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -27,22 +28,16 @@ class FrameLayoutActivity : AppCompatActivity() {
         val switchButton = findViewById<Button>(R.id.switched)
 
     switchButton.setOnClickListener {
-        if (text1.visibility == View.VISIBLE) {
-            text1.visibility == View.GONE
-            text2.visibility = View.VISIBLE
-        }else{
-            text1.visibility = View.VISIBLE
-        }
-//        }else if(text2.visibility == View.VISIBLE){
-//            text2.visibility == View.GONE
-//            text3.visibility == View.VISIBLE
-//        }
-//        else if (text3.visibility == View.VISIBLE){
-//            text3.visibility = View.GONE
+         val editText = findViewById<EditText>(R.id.edited)
+
+
+//        if (text1.visibility == View.VISIBLE) {
+//            text1.visibility == View.GONE
+//            text2.visibility = View.VISIBLE
+//        }else{
 //            text1.visibility = View.VISIBLE
-//
-//
 //        }
+
     }
 
     }

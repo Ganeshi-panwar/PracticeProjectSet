@@ -13,9 +13,11 @@
         android:theme="@style/Theme.PracticeProjectSet"
         tools:targetApi="31">
         <activity
-            android:name=".ConstraintLayout.ConstraintLayout"
+            android:name=".ListView.UserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListView.ListView"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,17 +25,28 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ConstraintLayout.ConstraintLayout"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".LinearLayout.LinearLayout"
             android:exported="false" />
         <activity
             android:name=".FrameLayout.FrameLayoutActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".FragmentLifeCycle.MainFragmentActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ActivityLifeCycle.ActivityLifeCycle"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

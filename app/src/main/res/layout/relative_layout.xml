@@ -6,23 +6,32 @@
     <TextView
         android:id="@+id/one"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:text="One"
         android:textSize="25sp"/>
     <TextView
         android:id="@+id/two"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:textSize="30sp"
         android:text="Two"
         android:layout_below="@+id/one"/>
     <TextView
+        android:id="@+id/three"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:text="Three"
 
         android:textSize="30sp"
         android:layout_below="@id/two"/>
+    <Button
+        android:id="@+id/clickMe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:background="@color/black"
+        android:layout_below="@id/three"/>
+
 
 
 </RelativeLayout>

@@ -31,10 +31,28 @@ android:visibility="gone"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="hello ganeshi"/>
+    <EditText
+        android:id="@+id/edited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name:"
+        android:autoText="true"
+        android:drawableBottom="@color/black"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/g"
+        android:layout_marginTop="100dp"/>
+
     <Button
         android:id="@+id/switched"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
 
         android:background="@color/black"
         android:text="SWITCH"
