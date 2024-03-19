@@ -1,6 +1,7 @@
 package com.ganeshi.practiceprojectset.RecyclerView
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,7 +12,7 @@ import com.ganeshi.practiceprojectset.databinding.ActivityRecyclerViewBinding
 
 class RecyclerViewActivity : AppCompatActivity() {
     private lateinit var binding:ActivityRecyclerViewBinding
-    var listTheCategories = arrayListOf<MyUser>()
+    private var listTheCategories = arrayListOf<MyUser>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRecyclerViewBinding.inflate(layoutInflater)
@@ -41,6 +42,10 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         binding.recyclerView.layoutManager = LinearLayoutManager(this , LinearLayoutManager.VERTICAL , false)
         binding.recyclerView.adapter = recyclerViewAdapter(this, listTheCategories)
+        binding.recyclerView.setOnClickListener{
+            Toast.makeText(this , "click" , Toast.LENGTH_SHORT).show()
+        }
+
 
     }
 }

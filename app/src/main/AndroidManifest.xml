@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PracticeProjectSet"
         tools:targetApi="31">
         <activity
-            android:name=".RecyclerView.RecyclerViewActivity"
+            android:name=".Dialogs.DialogsMainActivity"
             android:exported="true" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -22,11 +22,20 @@
         </intent-filter>
         </activity>
         <activity
-            android:name=".ListView.UserActivity"
-            android:exported="true" >
+            android:name=".rec.RecyclerViewDemo"
+            android:exported="true">
 
         </activity>
+        <activity
+            android:name=".RecyclerView.RecyclerViewActivity"
+            android:exported="true">
 
+        </activity>
+        <activity
+            android:name=".ListView.UserActivity"
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".ListView.ListView"
             android:exported="true">
