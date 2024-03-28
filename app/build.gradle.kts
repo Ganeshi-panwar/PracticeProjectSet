@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("kotlin-kapt")
+
 }
 
 android {
@@ -52,4 +54,15 @@ dependencies {
     implementation ("com.google.android.material:material:1.3.0-alpha03")
     implementation ("com.google.android.material:material:1.4.0")
     implementation ("com.google.android.material:material:1.3.0-alpha02")
+
+
+    dependencies {
+        val room_version = "2.4.3"
+
+        implementation("androidx.room:room-runtime:$room_version")
+        annotationProcessor("androidx.room:room-compiler:$room_version")
+        kapt("androidx.room:room-compiler:$room_version")
+    }
 }
+
+

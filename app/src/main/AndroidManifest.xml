@@ -20,13 +20,10 @@
         android:theme="@style/Theme.PracticeProjectSet"
         tools:targetApi="31">
         <activity
-            android:name=".SharedPreferences.SharedPrefActivity3"
+            android:name=".RoomDataBase.ShowRoomDataActivity"
             android:exported="false" />
         <activity
-            android:name=".SharedPreferences.SecondSharedPrefActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SharedPreferences.SharedPreferencesActivity"
+            android:name=".RoomDataBase.RoomDataBaseMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,6 +31,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SharedPreferences.SharedPrefActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferences.SecondSharedPrefActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SharedPreferences.SharedPreferencesActivity"
+            android:exported="false" />
         <activity
             android:name=".AndroidPermission.AndroidPermissionActivity"
             android:exported="true" />
